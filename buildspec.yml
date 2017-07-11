@@ -4,12 +4,13 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - apt-get update
-      - apt-get install openssh-client
+      - env
       - mvn test
+      - hogeaaaaaa
   post_build:
     commands:
       - echo Build completed on `date`
+      - env
       - mvn package
 artifacts:
   files:
